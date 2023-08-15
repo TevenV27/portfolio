@@ -1,9 +1,34 @@
 .about-box{
-    min-height: 100vh;
+    
+    min-height: 70vh;
     width: 100%;
+    padding: 10;
     display: flex;
-    background-color: rgb(40, 31, 46);
     flex-direction: column;
+    justify-content: center;
+}
+.description{
+    display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
+.box-image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30% 20% 30% 20%;
+}
+.box-image img{
+    width: 100%;
+   
+}
+.welcome-tex{
+    width: 100;
+}
+h1{
+    color: greenyellow;
+}
+p{
+    color: rgb(205, 205, 205);
+}
+

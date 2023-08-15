@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Welcome from './components/Welcome';
+import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Tecnologies from './components/Tecnologies';
 import Projects from './components/Projects';
@@ -15,22 +15,27 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <main className='main-box'>
-        <section className='section-box' id='welcome'>
-          <Welcome />
+      <main >
+        <section className='section-box' id='home'>
+          <Home />
         </section>
-        <secttion className='section-box' id='about'>
-          <AboutMe />
-        </secttion>
-        <secttion className='section-box' id='tecnologies'>
-          <Tecnologies />
-        </secttion>
-        <secttion className='section-box' id='projects'>
-          <Projects />
-        </secttion>
-        <secttion className='section-box' id='contact'>
-          <Contact />
-        </secttion>
+
+        <div className='main-box'>
+          <section className='section-box' id='about'>
+            <AboutMe />
+          </section>
+          <section className='section-box' id='technologies'>
+            <Tecnologies />
+          </section>
+          <section className='section-box' id='projects'>
+            <Projects />
+          </section>
+          <section className='section-box' id='contact'>
+            <Contact />
+          </section>
+        </div>
+
+
 
 
 
