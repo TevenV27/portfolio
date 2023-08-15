@@ -15,11 +15,10 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <main >
+      <main className='main' >
         <section className='section-box' id='home'>
           <Home />
         </section>
-
         <div className='main-box'>
           <section className='section-box' id='about'>
             <AboutMe />

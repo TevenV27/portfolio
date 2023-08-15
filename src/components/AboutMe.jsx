@@ -10,7 +10,7 @@ export default function AboutMe() {
                 <div className='description'>
                     <div>
                         <p>
-                            As a software developer and final year systems engineering student, I am tirelessly looking for new challenges that allow me to skilfully apply my skills and knowledge. My involvement in teamwork is distinguished by my proactivity and ability to collaborate, backed by a strong work ethic and sharp analytical skills that I use to efficiently and accurately address problems.
+                            Hello everyone, my name is Steven Victoria, I live in Colombia and as a software developer and final year student of systems engineering, I am constantly pursuing new challenges that allow me to skilfully apply my skills and knowledge. My involvement in teamwork is distinguished by my proactivity and ability to collaborate, backed by a strong work ethic and sharp analytical skills that I use to efficiently and accurately address problems.
                         </p>
                         <br />
                         <p>
