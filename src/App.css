@@ -1,0 +1,15 @@
+.main-box {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-box{
+    width: 100%;
+}
