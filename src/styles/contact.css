@@ -30,7 +30,7 @@ input{
     height: 40px;
     width: 500px;
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     border: 1px solid greenyellow;
     border-radius: 3px;
@@ -43,7 +43,7 @@ textarea{
     width: 500px;
     height: 220px;
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
     border: 1px solid greenyellow;
     border-radius: 3px;
@@ -80,6 +80,6 @@ button:hover{
     input, textarea, button, .text-final-box {
         width: 100%;
     }
-  
+    
 
   }
