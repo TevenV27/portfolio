@@ -18,7 +18,7 @@ export default function AboutMe() {
                         </p>
                     </div>
                     <div className='box-image'>
-                        <img className='me-image' src="public/me.jpg" alt="me" />
+                        <img className='me-image' src="https://raw.githubusercontent.com/TevenV27/server-images/main/projects/teven/me.jpg" alt="me" />
                     </div>
                 </div>
                 <div className='phrase'>
