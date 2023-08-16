@@ -52,7 +52,7 @@ p {
     .type-study-box{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        
         padding: 5px 0px;
     }
     .type-study {
@@ -71,7 +71,7 @@ p {
     .type-experience-box{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+      
         padding: 5px 0px;
     }
     .type-work {
@@ -124,5 +124,13 @@ p {
 
     .box-image {
         display: none;
+    }
+    .type-study-box{
+        flex-direction: column;
+        text-align: left;
+    }
+    .type-experience-box{
+        flex-direction: column;
+        text-align: left;
     }
 }

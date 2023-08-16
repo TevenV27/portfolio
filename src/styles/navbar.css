@@ -29,3 +29,12 @@ li{
 .nav-items:hover{
     color: greenyellow;
 }
+@media (max-width: 550px) {
+    .navigation-box{
+
+        gap: 20px;
+    }
+    .nav-items{
+        font-size: 1rem;
+    } 
+}
