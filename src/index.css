@@ -22,5 +22,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@media (max-width: 550px) {
+
+  :root {
+      font-size: 0.8rem;
+      
+  }
+
+}
 
 
