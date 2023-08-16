@@ -18,7 +18,7 @@ export default function AboutMe() {
                         </p>
                     </div>
                     <div className='box-image'>
-                        <img className='me-image' src="../images/me.jpg" alt="me" />
+                        <img className='me-image' src="/public/me.jpg" alt="me" />
                     </div>
                 </div>
                 <div className='phrase'>
