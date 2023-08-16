@@ -32,9 +32,9 @@ li{
 @media (max-width: 550px) {
     .navigation-box{
 
-        gap: 10px;
+        gap: 15px;
     }
     .nav-items{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     } 
 }
