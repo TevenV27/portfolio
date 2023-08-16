@@ -14,7 +14,7 @@ export default function Home() {
 
         <span className='rol-text'> Software Developer</span>
         <div className='button-cv-box'>
-          <a className='button-down-cv' href="src\assets\CV_Steven_Victoria.pdf" target="_blank" >Download CV</a>
+          <a className='button-down-cv' href="/assets/CV_Steven_Victoria.pdf" target="_blank" >Download CV</a>
         </div>
       </div>
 

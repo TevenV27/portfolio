@@ -18,13 +18,13 @@ export default function AboutMe() {
                         </p>
                     </div>
                     <div className='box-image'>
-                        <img className='me-image' src="src\images\me.jpg" alt="me" />
+                        <img className='me-image' src="../images/me.jpg" alt="me" />
                     </div>
                 </div>
                 <div className='phrase'>
-                <i>"A goal without a plan is just a wish"</i>
+                    <i>"A goal without a plan is just a wish"</i>
                 </div>
-                
+
 
             </div>
 
