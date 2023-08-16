@@ -1,9 +1,97 @@
-.project-box{
-    min-height: 100vh;
+.project-box {
+    margin: 50px 0px;
     width: 100%;
-    background-color: rgb(31, 39, 46);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.project-descript {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .project-img {
+    width: 450px;
+    border-radius: 3px;
+    transition: filter 0.3s, opacity 0.3s;
+    cursor: pointer;
+  }
+  
+  .button-redirect{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 3px;
+    background-color: #111;
+    color: white;
+  }
+  .button-redirect:hover{
+    box-shadow:  0px 0px 0px 1px greenyellow;
+    color: greenyellow;
+    
+  }
+  .image-wrapper:hover .project-img {
+    filter: blur(1px) brightness(50%);
+    opacity: 0.6;
+    
+   
+  }
+
+  .buttons-container {
+    display: flex;
+    position: absolute;
+    gap: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-wrapper:hover .buttons-container {
+    opacity: 1;
+  }
+
+
+.list-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.list-element {
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    height: 22px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    color: #111;
 }

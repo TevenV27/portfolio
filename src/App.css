@@ -1,22 +1,35 @@
-.main{
+.main {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .main-box {
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.section-box{
+.section-box {
     width: 100%;
+}
+
+.footer-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    color: greenyellow;
+    padding: 5px;
 }

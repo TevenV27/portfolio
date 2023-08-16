@@ -1,43 +1,126 @@
-.about-box{
-    
-    min-height: 70vh;
+.about-box {
+    margin: 50px 0px;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.description{
+
+.description {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.box-image{
+.phrase{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-family: sans-serif;
+    color: rgba(0, 221, 255, 0.911);
+}
+
+.box-image {
     position: relative;
     overflow: hidden;
     border-radius: 30% 20% 30% 20%;
 }
-.box-image img{
+
+.box-image img {
     width: 100%;
-   
+
 }
-.welcome-tex{
+
+.welcome-tex {
     width: 100;
 }
-h1{
+
+h1 {
     color: greenyellow;
 }
-p{
-    color: rgb(205, 205, 205);
+
+p {
+    color: rgb(174, 174, 174);
 }
-@media (max-width: 550px) {
+
+.education-box {
+    padding: 10px;
+
+    .type-study-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+    }
+    .type-study {
+        color: white;
+        font-weight: 700;
+    }
+    .study-duration{
+        font-size: 0.8rem;
+        color: greenyellow;
+    }
+
+}
+.experience-box {
+    padding: 10px;
+
+    .type-experience-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+    }
+    .type-work {
+        color: white;
+        font-weight: 700;
+    }
+    .work-duration{
+        font-size: 0.8rem;
+        color: greenyellow;
+    }
+    .technologies-box{
+        display: flex;
+        flex-direction: column;
+     
+        font-weight: 700;
+        gap: 5px;
+    }
+    .technologies{
+       
+        padding: 5px 0px;
+        color: white;
+    }
+    .list-tech{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+    .list-element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: greenyellow;
+        height: 22px;
+        padding: 0px 10px;
+        border-radius: 3px;
+        color: #111;
+    }
     
-    .description{
+
+}
+
+
+@media (max-width: 550px) {
+
+    .description {
         flex-direction: column;
         flex-flow: wrap-reverse;
     }
-    .box-image{
+
+    .box-image {
         display: none;
     }
 }

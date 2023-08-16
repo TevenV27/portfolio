@@ -1,9 +1,53 @@
-.tecno-box{
-    min-height: 100vh;
+.tecno-box {
+    margin: 50px 0px;
     width: 100%;
-    background-color: rgb(33, 51, 47);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
+
+.container-image {
+    display: flex;
+    overflow: hidden;
+}
+
+img {
+    width: 150px;
+}
+.image-box{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tech-descrp{
+    color: white;
+}
+.image-tech{
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    gap: 20px;
+    animation: slide 15s linear infinite;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+  }

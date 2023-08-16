@@ -15,7 +15,7 @@
     align-items: center;
 }
 .sybols-text{
-    color: rgba(223, 223, 223, 0.911);
+    color: rgba(0, 221, 255, 0.911);
 }
 
 .home-box::before {
@@ -26,20 +26,21 @@
     width: 100%;
     height: 100%;
     background-image: url('src/images/backrgoud-pattern.svg');
-    opacity: 0.2; /* Ajusta la opacidad según sea necesario */
+    opacity: 0.23; /* Ajusta la opacidad según sea necesario */
     z-index: -1;
     box-shadow: #111111 0px -70px 36px -28px inset;
 }
 .name-text{
 
     text-align: center;
-    font-size: 6rem;
+    font-weight: 700;
+    font-size: 7rem;
     margin: 0;
     padding: 0;
     
 }
 .rol-text{
-    color: rgb(199, 199, 199);
+    color: rgb(240, 240, 240);
     width: 100%;
     text-align: center;
     font-size: 2rem;
@@ -70,6 +71,7 @@
 .button-down-cv:hover{
     background-color: #111111;
     color: greenyellow;
+    box-shadow: greenyellow 0px 0px 0px 1px;
 }
 
 
