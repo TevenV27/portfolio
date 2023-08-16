@@ -75,3 +75,11 @@ button:hover{
     color: greenyellow;
     box-shadow: greenyellow 0px 0px 0px 1px;
 }
+@media (max-width: 550px) {
+
+    input, textarea, button, .text-final-box {
+        width: 100%;
+    }
+  
+
+  }

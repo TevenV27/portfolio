@@ -95,3 +95,14 @@
     border-radius: 3px;
     color: #111;
 }
+@media (max-width: 550px) {
+
+  .project-container {
+      flex-direction: column;
+      
+  }
+
+  .project-img{
+    width: 100%;
+  }
+}

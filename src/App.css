@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
+  
 }
 
 html {
@@ -33,3 +34,12 @@ html {
     color: greenyellow;
     padding: 5px;
 }
+
+@media (max-width: 550px) {
+
+    .main-box {
+        width: 100%;
+    }
+  
+
+  }
