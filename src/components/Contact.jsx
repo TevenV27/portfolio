@@ -39,6 +39,8 @@ export default function Contact() {
           SEND IT!
         </button>
       </form>
+      <br />
+      <br />
     </div>
   )
 }
