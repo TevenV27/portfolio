@@ -9,7 +9,7 @@
             "Animate",
             "Vercel"
         ],
-        "image": "src/images/projects/valorant-page.png",
+        "image": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/valorant-page.png",
         "websiteURL": "https://valorantgg-wiki.vercel.app/",
         "repositoryURL": "https://github.com/TevenV27/valorant-wiki"
     },
@@ -22,12 +22,12 @@
             "JavaScript",
             "Vercel"
         ],
-        "image": "src/images/projects/wedding-card.png",
+        "image": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wedding-card.png",
         "websiteURL": "https://marlen-y-carlos.vercel.app/",
         "repositoryURL": "https://github.com/TevenV27/TarjetaBoda"
     },
     {
-        "name": "Movies page",
+        "name": "Differential equations",
         "description": "I developed a laboratory of two real world problems, solved and explained by means of differential equations in a graphic and understandable way.",
         "technologies": [
             "HTML",
@@ -36,12 +36,12 @@
             "Chart JS",
             "Vercel"
         ],
-        "image": "src/images/projects/differential-equations.png",
+        "image": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/differential-equations.png",
         "websiteURL": "https://ecuaciones-diferenciales.vercel.app/",
         "repositoryURL": "https://github.com/TevenV27/ecuaciones-diferenciales"
     },
     {
-        "name": "Differential equations",
+        "name": "Movies page",
         "description": "To get hands-on experience working with and managing APIs, I've created a page on functional movie information which uses an API to retrieve and display information for each movie. This hands-on project allowed me to understand the process of consuming external data and its effective integration into a web application.",
         "technologies": [
             "React",
@@ -49,7 +49,7 @@
             "CSS",
             "Vercel"
         ],
-        "image": "src/images/projects/movies-page.png",
+        "image": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/movies-page.png",
         "websiteURL": "https://movies-page-vite.vercel.app/",
         "repositoryURL": "https://github.com/TevenV27/Movies-page"
     }
