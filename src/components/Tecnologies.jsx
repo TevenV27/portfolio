@@ -55,7 +55,7 @@ export default function Tecnologies() {
               <div className='image-box' key={`duplicate-${index}`}>
                 <img
                   className='image-tech'
-                  src={`src/images/technologies/${image}`}
+                  src={`shttps://raw.githubusercontent.com/TevenV27/server-images/main/projects/technologies/${image}`}
                   alt='technology'
                 />
               </div>
