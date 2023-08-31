@@ -1,23 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './../styles/tecnologies.css';
-
-const images = [
-  'react.png',
-  'javascript.png',
-  'html.png',
-  'css.png',
-  'python.png',
-  'java.png',
-  'node.png',
-  'git.png',
-  'postgre.png',
-  'mongo.png',
-  'tailwind.png',
-  'express.png'
-];
 
 export default function Tecnologies() {
   const [paused, setPaused] = useState(false);
+  const [technologies, setTechnologies] = useState([]); // <== New state
 
   const handleMouseEnter = () => {
     setPaused(true);
@@ -26,6 +12,23 @@ export default function Tecnologies() {
   const handleMouseLeave = () => {
     setPaused(false);
   };
+
+  useEffect(() => {
+
+    const fechTechnologies = async () => {
+      try {
+        const response = await fetch('https://portfolio-teven-dev.fl0.io/api/technology');
+        const data = await response.json();
+        setTechnologies(data);
+      } catch (error) {
+        console.error('Error fetching about data:', error);
+      }
+    }
+
+    fechTechnologies();
+
+  }, []);
+
 
   return (
     <div className='tecno-box'>
@@ -43,21 +46,20 @@ export default function Tecnologies() {
             className='carousel-wrapper'
             style={{ animationPlayState: paused ? 'paused' : 'running' }}
           >
-            {images.map((image, index) => (
+            {technologies.map((image, index) => (
               <div className='image-box' key={index}>
                 <img
-                  src={`https://raw.githubusercontent.com/TevenV27/server-images/main/projects/technologies/${image}`}
-                  alt='technology'
+                  src={image.logo}
+                  alt={image.name}
                 />
               </div>
             ))}
-            {images.map((image, index) => (
+            {technologies.map((image, index) => (
               <div className='image-box' key={`duplicate-${index}`}>
                 <img
                   className='image-tech'
-
-                  src={`https://raw.githubusercontent.com/TevenV27/server-images/main/projects/technologies/${image}`}
-                  alt='technology'
+                  src={image.logo}
+                  alt={image.name}
                 />
               </div>
             ))}

@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './../styles/projects.css';
-import projectsData from '../data/projects-data.json';
 
 export default function Projects() {
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+
+    const fechProjects = async () => {
+      try {
+        const response = await fetch('https://portfolio-teven-dev.fl0.io/api/projects');
+        const data = await response.json();
+        setProjectsData(data);
+      } catch (error) {
+        console.error('Error fetching about data:', error);
+      }
+    }
+
+    fechProjects();
+
+  }, []);
   return (
     <div className='project-box'>
       <h1>&lt; Projects /&gt;</h1>
@@ -11,7 +27,7 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div key={index} className='project-container'>
             <div className='project-descript'>
-              <h3>{project.name}</h3>
+              <h3>{project.title}</h3>
               <p>{project.description}</p>
               <ul className='list-tech'>
                 {project.technologies.map((technology, techIndex) => (
