@@ -17,7 +17,7 @@ export default function Tecnologies() {
 
     const fechTechnologies = async () => {
       try {
-        const response = await fetch('https://portfolio-teven-dev.fl0.io/api/technology');
+        const response = await fetch('https://portfolio-backend-icl5.onrender.com/api/technology');
         const data = await response.json();
         setTechnologies(data);
       } catch (error) {
