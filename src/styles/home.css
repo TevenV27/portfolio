@@ -8,13 +8,15 @@
     justify-content: center;
     align-items: center;
 }
-.home-box{
+
+.home-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sybols-text{
+
+.sybols-text {
     color: rgba(0, 221, 255, 0.911);
 }
 
@@ -26,36 +28,54 @@
     width: 100%;
     height: 100%;
     background-image: url('../images/backrgoud-pattern.svg');
-    opacity: 0.23; /* Ajusta la opacidad según sea necesario */
+    opacity: 0.23;
+    /* Ajusta la opacidad según sea necesario */
     z-index: -1;
     box-shadow: #111111 0px -70px 36px -28px inset;
 }
-.name-text{
+
+.name-text {
 
     text-align: center;
     font-weight: 700;
     font-size: 7rem;
     margin: 0;
     padding: 0;
-    
+
 }
-.rol-text{
-    color: rgb(240, 240, 240);
+
+.rol-text-box {
+    display: flex;
     width: 100%;
-    text-align: center;
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .rol-text {
+        color: rgb(240, 240, 240);
+        width: 320px;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+        font-size: 2rem;
+        border-right: 1px solid white;
+        animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+        overflow: hidden;
+    }
 }
-.welcome-tex{
+
+.welcome-tex {
     padding-left: 5px;
     font-size: 1.3rem;
 }
-.button-cv-box{
+
+.button-cv-box {
     display: flex;
     width: 100%;
     justify-content: center;
     padding: 30px;
 }
-.button-down-cv{
+
+.button-down-cv {
     text-decoration: none;
     background-color: greenyellow;
     width: 130px;
@@ -68,20 +88,40 @@
     justify-content: center;
     font-weight: 700;
 }
-.button-down-cv:hover{
+
+.button-down-cv:hover {
     background-color: #111111;
     color: greenyellow;
     box-shadow: greenyellow 0px 0px 0px 1px;
 }
+
 @media (max-width: 550px) {
-    .name-text{
+    .name-text {
         font-size: 5rem;
     }
-    .rol-text {
-        font-size: 1.4rem;
+
+    .rol-text-box {
+
+        .rol-text {
+            font-size: 1.4rem;
+            width: 200px;
+        }
+
     }
-    
-  }
+
+
+}
 
 
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
