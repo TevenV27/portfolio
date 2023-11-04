@@ -8,7 +8,7 @@ export default function Projects() {
 
     const fechProjects = async () => {
       try {
-        const response = await fetch('https://portfolio-backend-icl5.onrender.com/api/projects');
+        const response = await fetch('https://portfolio-backend-dev-esep.3.us-1.fl0.io/api/projects');
         const data = await response.json();
         setProjectsData(data);
       } catch (error) {
