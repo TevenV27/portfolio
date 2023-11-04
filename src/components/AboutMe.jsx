@@ -12,7 +12,7 @@ export default function AboutMe() {
     useEffect(() => {
         const fechAboutMe = async () => {
             try {
-                const response = await fetch('https://portfolio-backend-icl5.onrender.com/api/about');
+                const response = await fetch('https://portfolio-backend-dev-esep.3.us-1.fl0.io/api/about');
                 const data = await response.json();
                 setAboutData(data);
             } catch (error) {
@@ -22,7 +22,7 @@ export default function AboutMe() {
 
         const fetchExperience = async () => {
             try {
-                const response = await fetch('https://portfolio-backend-icl5.onrender.com/api/experience');
+                const response = await fetch('https://portfolio-backend-dev-esep.3.us-1.fl0.io/api/experience');
                 const data = await response.json();
                 setExperienceData(data);
             } catch (error) {
@@ -31,7 +31,7 @@ export default function AboutMe() {
         }
         const fetchEducation = async () => {
             try {
-                const response = await fetch('https://portfolio-backend-icl5.onrender.com/api/education');
+                const response = await fetch('https://portfolio-backend-dev-esep.3.us-1.fl0.io/api/education');
                 const data = await response.json();
                 setEducationData(data);
             } catch (error) {
