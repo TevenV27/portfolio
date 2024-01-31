@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className='button-cv-box'>
-          <a className='button-down-cv' href="/assets/CV_Steven_Victoria.pdf" target="_blank" >Download CV</a>
+          <a className='button-down-cv' href="https://raw.githubusercontent.com/TevenV27/portfolio/main/src/assets/CV_English.pdf" target="_blank" >Download CV</a>
         </div>
       </div>
 
