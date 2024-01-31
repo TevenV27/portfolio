@@ -17,7 +17,7 @@ export default function Tecnologies() {
 
     const fechTechnologies = async () => {
       try {
-        const response = await fetch('https://portfolio-backend-dev-esep.3.us-1.fl0.io/api/technology');
+        const response = await fetch('https://portfolio-teven.koyeb.app/api/technology');
         const data = await response.json();
         setTechnologies(data);
       } catch (error) {
