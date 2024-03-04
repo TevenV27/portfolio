@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay} from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/bundle';
 import './../styles/tecnologies.css';
 
 export default function Tecnologies() {
-  const [paused, setPaused] = useState(false);
-  const [technologies, setTechnologies] = useState([]); // <== New state
-
-  const handleMouseEnter = () => {
-    setPaused(true);
-  };
-
-  const handleMouseLeave = () => {
-    setPaused(false);
-  };
-
+  const [technologies, setTechnologies] = useState([]); 
+  
   useEffect(() => {
 
     const fechTechnologies = async () => {
@@ -29,8 +25,8 @@ export default function Tecnologies() {
 
   }, []);
 
-
   return (
+
     <div className='tecno-box'>
       <h1>&lt; Technologies /&gt;</h1>
       <br />
@@ -38,33 +34,27 @@ export default function Tecnologies() {
       <br />
       <div
         className='container-image'
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
-        <div className='carousel-container'>
-          <div
-            className='carousel-wrapper'
-            style={{ animationPlayState: paused ? 'paused' : 'running' }}
-          >
-            {technologies.map((image, index) => (
-              <div className='image-box' key={index}>
-                <img
-                  src={image.logo}
-                  alt={image.name}
-                />
-              </div>
-            ))}
-            {technologies.map((image, index) => (
-              <div className='image-box' key={`duplicate-${index}`}>
-                <img
-                  className='image-tech'
-                  src={image.logo}
-                  alt={image.name}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          slidesPerView={4}
+          loop={true}
+          
+        >
+          {technologies.map((image, index) => (
+            <SwiperSlide className='image-box swiper' key={index}>
+              <img
+                src={image.logo}
+                alt={image.name}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
