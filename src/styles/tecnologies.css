@@ -25,29 +25,9 @@ img {
 .tech-descrp{
     color: white;
 }
-.image-tech{
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-.carousel-container {
-    display: flex;
-    overflow: hidden;
-    gap: 10px;
-  }
-  
-  .carousel-wrapper {
-    display: flex;
-    gap: 20px;
-    animation: slide 15s linear infinite;
-  }
-  
-  
-  @keyframes slide {
-    0% {
-      transform: translateX(0vw);
-    }
-    100% {
-      transform: translateX(-100vw);
-    }
+  @media (max-width: 600px) {
+   .tech-img{
+        width: 85px;
+        margin: 0px 20px;
+   }
   }

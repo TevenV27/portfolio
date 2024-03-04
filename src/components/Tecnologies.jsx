@@ -48,7 +48,7 @@ export default function Tecnologies() {
         >
           {technologies.map((image, index) => (
             <SwiperSlide className='image-box swiper' key={index}>
-              <img
+              <img className='tech-img'
                 src={image.logo}
                 alt={image.name}
               />
