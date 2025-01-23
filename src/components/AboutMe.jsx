@@ -54,11 +54,34 @@ export default function AboutMe() {
                     <div key={index}>
                         <div className='description'>
                             <div>
-                                <p>{item.description}</p>
+                                <p>
+                                    I am a Systems Engineer from Universidad del Valle, with strong analytical skills and a practical approach to apply my knowledge in solving real problems.
+                                    I specialize in software development, with a growing interest in improving my skills and knowledge.
+                                    Recently contributing in the development of projects that generate a significant impact in the freight transportation sector.
+                                </p>
+                                <p>
+                                    One of my strengths is my ability to work in a team, standing out for my clear communication, willingness to learn and contribute, as well as empathy when collaborating with others.
+                                    I like to face challenges that allow me to grow as a professional, learn new technologies, and contribute to the success of projects.
+                                </p>
+                                <br />
+                                <p>
+                                    <strong>What I can bring to your team:</strong>
+                                </p>
+                                <ul>
+                                    <li>An analytical approach to solving problems effectively.</li>
+                                    <li>Experience in developing intuitive and user-friendly interfaces.</li>
+                                    <li>Knowledge in automation and process optimization.</li>
+                                    <li>Soft skills that facilitate collaboration and teamwork.</li>
+                                </ul>
+                                <br />
+                                <p>
+                                    I am motivated by the opportunity to continue to grow and add value to every project I participate in.
+                                    If you are looking for someone committed, eager to learn, and with the attitude to face new challenges, it will be a pleasure to connect with you.
+                                </p>
                             </div>
-                            <div className='box-image'>
+                            {/* <div className='box-image'>
                                 <img className='me-image' src="https://raw.githubusercontent.com/TevenV27/server-images/main/projects/teven/me.jpg" alt="me" />
-                            </div>
+                            </div> */}
                         </div>
                         <div className='phrase'>
                             <i>"{item.pharase}"</i>
@@ -115,7 +138,7 @@ export default function AboutMe() {
 
                     </div>
                 ))}
-                
+
             </div>
 
         </>

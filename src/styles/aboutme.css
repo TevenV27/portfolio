@@ -42,9 +42,11 @@ h1 {
     color: greenyellow;
 }
 
-p {
+p, ul,li {
     color: rgb(174, 174, 174);
 }
+
+
 
 .education-box {
     padding: 10px;
